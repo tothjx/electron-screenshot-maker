@@ -1,0 +1,42 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  margin: 0px;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(240, 240, 240);
+  padding: 20px;
+}
+
+a {
+  color: black;
+}
+
+a:active, a:link, a:visited {
+  color: black;
+}
+
+a:hover {
+  color: orangered;
+}
+
+h1 {
+  font-family: "Arial Black", sans-serif;
+  font-size: 16pt;
+  color: silver;
+  text-align: center;
+  margin: 0px 0px 5px 0px;
+}
+
+#log {
+  padding: 10px;
+  font-family: 'Courier New', monospace;
+  font-size: 12pt;
+  color: gray;
+  min-width: 730px;
+  min-height: 505px;
+  resize: none;
+}

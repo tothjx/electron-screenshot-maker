@@ -1,0 +1,47 @@
+{
+  "name": "screenshot-maker",
+  "version": "1.0.1",
+  "productName": "screenshot-maker",
+  "description": "desktop screenshot maker",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "build-installer": "electron-builder"
+  },
+  "author": "tothj",
+  "license": "MIT",
+  "build": {
+    "appId": "screenshot-maker",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "./img/icon.ico"
+    },
+    "nsis": {
+      "installerIcon": "./img/icon.ico",
+      "uninstallerIcon": "./img/icon.ico",
+      "uninstallDisplayName": "screenshot-maker",
+      "license": "LICENSE",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.2.1",
+    "@electron-forge/maker-deb": "^6.2.1",
+    "@electron-forge/maker-rpm": "^6.2.1",
+    "@electron-forge/maker-squirrel": "^6.2.1",
+    "@electron-forge/maker-zip": "^6.2.1",
+    "electron": "^25.2.0",
+    "electron-builder": "^23.3.3"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "screenshot-desktop": "^1.12.7"
+  }
+}
