@@ -27,5 +27,5 @@ npm run build-installer
 # build portable executable:
 npx electron-builder build --win portable
 
-# download portable executable (latest version):
+# download portable executable (windows x64 - latest version):
 https://tothj.com/download/screenshot-maker.exe
