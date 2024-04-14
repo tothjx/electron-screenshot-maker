@@ -1,18 +1,20 @@
+const pckg = require('../package.json');
+
 module.exports = {
 	/*
 	########################################
 	# APPLICATION CONFIG
 	########################################
 	*/
-	APP_NAME: 'screenshot maker',
 	APP_ENV: 'prod', // dev | prod
-	APP_AUTHOR: 'tothj',
-	APP_EMAIL: 'info@tothj.com',
-	APP_VERSION: '1.0.1',
+	APP_NAME: pckg.name,
+	APP_AUTHOR: pckg.author.name,
+	APP_EMAIL: pckg.author.email,
+	APP_VERSION: pckg.version,
 	SAVE_DIR: 'c:\\file\\',
 	SCREEN_KEY: 'Ctrl+F12',
 	QUIT_KEY: 'Ctrl+Q',
-	LINE: '====================================',
+	LINE: '========================================',
 	NL: '\n',
 
 	/*

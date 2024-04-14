@@ -21,9 +21,11 @@ app.on('ready', function(){
 	mainWindow.once('ready-to-show', () => {
 		mainWindow.show();
 		checkSaveDir();
+
 		globalShortcut.register(cfg.SCREEN_KEY, () => {
 			makeScreenshot();
 		});
+
 		globalShortcut.register(cfg.QUIT_KEY, () => {
 			app.quit();
 		});

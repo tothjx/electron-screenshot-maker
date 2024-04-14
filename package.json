@@ -1,6 +1,6 @@
 {
   "name": "screenshot-maker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "productName": "screenshot-maker",
   "description": "desktop screenshot maker",
   "main": "main.js",
@@ -12,7 +12,10 @@
     "lint": "echo \"No linting configured\"",
     "build-installer": "electron-builder"
   },
-  "author": "tothj",
+  "author": {
+    "name": "tothj",
+    "email": "info@tothj.com"
+  },
   "license": "MIT",
   "build": {
     "appId": "screenshot-maker",
@@ -37,11 +40,11 @@
     "@electron-forge/maker-rpm": "^6.2.1",
     "@electron-forge/maker-squirrel": "^6.2.1",
     "@electron-forge/maker-zip": "^6.2.1",
+    "electron-squirrel-startup": "^1.0.0",
     "electron": "^25.2.0",
-    "electron-builder": "^23.3.3"
+    "electron-builder": "^24.13.3"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0",
     "screenshot-desktop": "^1.12.7"
   }
 }

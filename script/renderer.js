@@ -11,11 +11,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		console.log('APP_VERSION:', cfg.APP_VERSION);
 	}
 
-	document.querySelector('title').innerHTML = cfg.APP_NAME;
+	document.querySelector('title').innerHTML = cfg.APP_NAME + ' ' + cfg.APP_VERSION;
 	log.value = cfg.LINE + cfg.NL;
 	log.value += cfg.APP_NAME + ' ' + cfg.APP_VERSION + cfg.NL;
-	log.value += 'press ' + cfg.SCREEN_KEY + ' to take a screenshot' + cfg.NL;
-	log.value += 'press ' + cfg.QUIT_KEY + ' to quit' + cfg.NL;
+	log.value += 'press ' + cfg.SCREEN_KEY.replace('+', ' + ') + ' to take a screenshot' + cfg.NL;
+	log.value += 'press ' + cfg.QUIT_KEY.replace('+', ' + ') + ' to quit' + cfg.NL;
+	log.value += 'save directory: ' + cfg.SAVE_DIR + cfg.NL;
+	log.value += 'e-mail: ' + cfg.APP_EMAIL + cfg.NL;
 	log.value += cfg.LINE + cfg.NL;
 });
 

@@ -2,14 +2,14 @@
 desktop screenshot maker - electron
 
 # global packages:
-electron-squirrel-startup
-
 screenshot-desktop
 
 # dev packages:
 electron
 
 electron-builder
+
+electron-squirrel-startup
 
 @electron-forge/cli
 
